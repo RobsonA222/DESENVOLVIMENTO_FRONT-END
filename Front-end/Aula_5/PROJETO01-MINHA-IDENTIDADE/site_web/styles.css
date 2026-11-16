@@ -1,0 +1,494 @@
+
+/* ==========================================
+   CONFIGURAÇÕES GERAIS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+.topogeral {
+    width: 100%;
+    background: linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #172554
+    );
+
+    border-bottom: 1px solid #1e3a8a;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Banner */
+
+.topogeral > img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+.lista01 {
+    padding: 20px;
+}
+
+.lista01 ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.lista01 a {
+    color: #e2e8f0;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.lista01 a:hover {
+    color: #38bdf8;
+
+    background: rgba(56, 189, 248, 0.1);
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   CONTEÚDO
+========================================== */
+
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 0;
+}
+
+
+/* ==========================================
+   TÍTULOS
+========================================== */
+
+h1 {
+    color: #38bdf8;
+
+    font-size: 2.4rem;
+
+    margin-top: 70px;
+
+    margin-bottom: 25px;
+
+    border-left: 5px solid #7c3aed;
+
+    padding-left: 15px;
+}
+
+h2 {
+    color: #a78bfa;
+
+    font-size: 1.7rem;
+
+    margin-top: 45px;
+
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #38bdf8;
+
+    font-size: 1.3rem;
+
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   PARÁGRAFOS
+========================================== */
+
+p {
+    color: #cbd5e1;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   OBJETIVO
+========================================== */
+
+#objetivo {
+    background: linear-gradient(
+        135deg,
+        rgba(56, 189, 248, 0.08),
+        rgba(124, 58, 237, 0.08)
+    );
+
+    border-left: 4px solid #38bdf8;
+
+    padding: 20px;
+
+    margin: 30px 0;
+
+    border-radius: 0 12px 12px 0;
+
+    color: #f8fafc;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   LISTAS
+========================================== */
+
+.lista02,
+.lista03,
+main ul {
+    margin: 20px 0 30px 25px;
+}
+
+.lista02 li,
+.lista03 li,
+main ul li {
+    color: #cbd5e1;
+
+    margin-bottom: 10px;
+}
+
+.lista02 li::marker,
+.lista03 li::marker,
+main ul li::marker {
+    color: #38bdf8;
+}
+
+
+/* ==========================================
+   TECNOLOGIAS
+========================================== */
+
+#Tecnologias_e_conhecimentos {
+    margin-top: 100px;
+}
+
+main img[src*="skillicons"] {
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 10px 0 30px;
+
+    transition: 0.3s;
+}
+
+main img[src*="skillicons"]:hover {
+    transform: scale(1.05);
+}
+
+
+/* ==========================================
+   PROJETOS
+========================================== */
+
+#Projetos {
+    margin-top: 100px;
+}
+
+#Projetos article {
+    background: #111c31;
+
+    border: 1px solid #1e3a5f;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    margin: 30px 0;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+#Projetos article:hover {
+    transform: translateY(-5px);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 15px 40px rgba(56, 189, 248, 0.12);
+}
+
+
+/* Links */
+
+main a {
+    color: #38bdf8;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+main a:hover {
+    color: #a78bfa;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   IMAGENS DOS PROJETOS
+========================================== */
+
+#Projetos article img {
+    display: block;
+
+    width: 100%;
+
+    max-width: 700px;
+
+    height: auto;
+
+    margin: 25px auto;
+
+    border-radius: 15px;
+
+    border: 1px solid #334155;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+
+    transition: 0.3s;
+}
+
+#Projetos article img:hover {
+    transform: scale(1.02);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 15px 40px rgba(56, 189, 248, 0.15);
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+    background: #020617;
+
+    border-top: 1px solid #1e3a8a;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+footer h1 {
+    display: inline-block;
+
+    margin-top: 0;
+
+    margin-bottom: 30px;
+
+    border-left: none;
+
+    border-bottom: 3px solid #7c3aed;
+
+    padding: 0 10px 10px;
+}
+
+
+/* ==========================================
+   BOTÕES DE CONTATO
+========================================== */
+
+footer a {
+    display: inline-block;
+
+    margin: 8px;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    transform: translateY(-5px);
+
+    opacity: 0.85;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   ACESSIBILIDADE
+========================================== */
+
+a:focus {
+    outline: 3px solid #facc15;
+
+    outline-offset: 4px;
+}
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 768px) {
+
+    .topogeral > img {
+        max-height: 300px;
+    }
+
+    .lista01 ul {
+        gap: 10px;
+    }
+
+    .lista01 a {
+        font-size: 0.9rem;
+
+        padding: 8px 10px;
+    }
+
+    main {
+        width: 90%;
+
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 480px) {
+
+    .topogeral > img {
+        max-height: 220px;
+    }
+
+    .lista01 {
+        padding: 15px 5px;
+    }
+
+    .lista01 ul {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .lista01 a {
+        display: block;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    main {
+        width: 88%;
+
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    #Projetos article {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 45px 15px;
+    }
+
+    footer a {
+        margin: 5px;
+    }
+}
+
